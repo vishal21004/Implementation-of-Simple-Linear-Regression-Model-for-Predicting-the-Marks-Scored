@@ -2,25 +2,43 @@
 
 ## AIM:
 To write a program to predict the marks scored by a student using the simple linear regression model.
+
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-#### 1.Import the standard Libraries. 
-#### 2.Set variables for assigning dataset values. 
-#### 3.Import linear regression from sklearn. 
-#### 4.Assign the points for representing in the graph. 
-#### 5.Predict the regression for marks by using the representation of the graph. 
-#### 6.Compare the graphs and hence we obtained the linear regression for the given datas.
+step 1.start
+step 2.Import the standard Libraries.
+
+step 3.Set variables for assigning dataset values.
+
+step 4.Import linear regression from sklearn.
+
+step 5.Assign the points for representing in the graph.
+
+step 6.Predict the regression for marks by using the representation of the graph.
+
+step 7.Compare the graphs and hence we obtained the linear regression for the given datas.
+
+step 8.stop
+
 ## Program:
-### VISHAL(2122222301777)
-```py
+```
+/*
+Program to implement the simple linear regression model for predicting the marks scored.
+
+Developed by: VISHAL M.A
+
+RegisterNumber: 212222230177
+*/
+
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
-df=pd.read_csv('student_scores.csv')
+df=pd.read_csv(r"C:\Users\admin\Downloads\student_scores.csv")
 print(df)
 df.head(0)
 df.tail(0)
@@ -59,22 +77,29 @@ print('MAE = ',mae)
 rmse=np.sqrt(mse)
 print("RMSE= ",rmse)
 ```
+
 ## Output:
-### Dataset
-![output](./images/dataset.png)
-### Head Values
-![output](./images/head.png)
-### Tail Values
-![output](./images/tail.png)
-### X and Y values
-![output](./images/xyvalues.png)
-### Predication values of X and Y
-![output](./images/predict%20.png)
-### MSE,MAE and RMSE
-![output](./images/values.png)
-### Training Set
-![output](./images/train.png)
-### Testing Set
-![output](./images/test.png)
+## DataSet:
+![dataset](https://github.com/user-attachments/assets/292127b3-869a-4cf4-b4c4-74490db1212c)
+
+## Hard Values:
+![hrdvlue](https://github.com/user-attachments/assets/7d69e66c-ff9d-440a-8521-183e447a86de)
+
+## Tail Values:
+![tl vl](https://github.com/user-attachments/assets/8cc75cde-f301-49bb-bb8d-547383b86314)
+
+## X and Y Values:
+![xy vl](https://github.com/user-attachments/assets/a4599a20-787d-4caf-9742-e3e4a35dcbe8)
+
+## Prediction of X and Y:
+![pr xy](https://github.com/user-attachments/assets/2e180613-0ff2-4c59-93ce-cd581c3fbd1b)
+
+## MSE, MAE and RMSE:
+![mae](https://github.com/user-attachments/assets/74873a51-ec05-441a-9035-b9f1bce5eb08)
+
+## Training Set:
+![trnng dtst](https://github.com/user-attachments/assets/4b249163-5b0a-4efa-b864-1db1bd1375cc)
+![trng 2](https://github.com/user-attachments/assets/4e48d611-ec67-4841-96e8-d58754407fe3)
+
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
